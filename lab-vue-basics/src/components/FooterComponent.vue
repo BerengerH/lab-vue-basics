@@ -13,7 +13,8 @@ export default {
 </script>
 
 <style scoped>
-footer{
-    margin: 20px;
-    background-color: #A2B5BB;
-}</style>
+footer {
+  margin: 20px;
+  background-color: #a2b5bb;
+}
+</style>

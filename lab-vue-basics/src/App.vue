@@ -1,23 +1,22 @@
 <template>
-  <NavComponent/>
-  <ContentComponent/>
-  <FooterComponent/>
+  <NavComponent />
+  <ContentComponent />
+  <FooterComponent />
 </template>
 
 <script>
-import NavComponent from './components/NavComponent.vue';
-import ContentComponent from './components/ContentComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
-
+import NavComponent from "./components/NavComponent.vue";
+import ContentComponent from "./components/ContentComponent.vue";
+import FooterComponent from "./components/FooterComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     NavComponent,
     ContentComponent,
     FooterComponent,
-  }
-}
+  },
+};
 </script>
 
 <style>

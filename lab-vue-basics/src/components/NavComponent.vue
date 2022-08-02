@@ -8,13 +8,13 @@
 
 <script>
 export default {
-    name: 'NavComponent',
+  name: "NavComponent",
 };
 </script>
 
 <style scoped>
-nav{
-    margin: 20px;
-    background-color: #CFD2CF;
+nav {
+  margin: 20px;
+  background-color: #cfd2cf;
 }
 </style>
