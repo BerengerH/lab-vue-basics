@@ -13,31 +13,27 @@
     <button @click="changeBackground">Change background</button>
     <div class="flex">
         <div v-for="item in items">
-            <p>{{ item.title }}</p>
-            <p>{{ item.description }}</p>
-            <p>{{ item.content }}</p>
+            <p>{{item.title }}</p>
+            <p>{{item.description }}</p>
+            <p>{{item.content }}</p>
         </div>
     </div>
-    <li >
-</li>
-
+    <button @click="addition" >Calculate</button>
   </div>
 </template>
 
 <script>
 export default {
   name: "ContentComponent",
+  props: {
+    'items': Object,
+  },
   data() {
     return {
       number1: 0,
       number2: 0,
       textAppear: true,
       background: true,
-      items: [
-        { title: "Title 1", description: "Description 1", content: "Content 1" },
-        { title: "Title 2", description: "Description 2", content: "Content 2" },
-        { title: "Title 3", description: "Description 3", content: "Content 3" },
-      ],
     };
   },
   methods: {
@@ -46,6 +42,9 @@ export default {
     },
     changeBackground() {
       this.background = !this.background;
+    },
+    addition(){
+        this.$emit("test");
     },
   },
   computed: {
